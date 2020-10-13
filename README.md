@@ -1,6 +1,11 @@
-# Dashboard Client-Side Application (Angular)
+# Dashboard Angular Example
 
-This example is a ready-to-use client Angular application with the DevExpress Dashboard component.
+This example illustrates how to use the Angular-based `dx-dashboard-control` component for displaying and editing dashboards. We manipulate with the [dashboardId](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions?v=20.2#js_devexpress_dashboard_dashboardcontroloptions_dashboardid) and [workingMode](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions?v=20.2#js_devexpress_dashboard_dashboardcontroloptions_workingmode) options using Angular bindings. In addition, we subscribe to the [onBeforeRender](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions?v=20.2#js_devexpress_dashboard_dashboardcontroloptions_onbeforerender) event to [Enable Text Editor Functionality](https://docs.devexpress.com/Dashboard/401572/web-dashboard/create-dashboards-on-the-web/designing-dashboard-items/text-box/enable-text-editor-functionality) in code. See the following files for implementation details:
+
+- [app.component.html](./dashboard-angular-app/src/app/app.component.html)
+
+  Embeds the `dx-dashboard-control` component.
+- [app.component.ts](./dashboard-angular-app/src/app/app.component.ts)
 
 > **Documentation**: [Client-Side Configuration (Angular)](https://docs.devexpress.com/Dashboard/400409)
 
@@ -20,6 +25,7 @@ dotnet run
 In the **dashboard-angular-app** folder, run the following commands:
 
 ```
+npm install
 npm start
 ```
 
