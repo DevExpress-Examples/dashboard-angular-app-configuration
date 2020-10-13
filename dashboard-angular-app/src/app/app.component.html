@@ -1,0 +1,25 @@
+<div class="header">
+  <dx-select-box
+    [width]="200"
+    [dataSource]="dashboards"
+    [(value)]="dashboardId"
+    valueExpr='id'
+    displayExpr='name'>
+  </dx-select-box>
+
+  <dx-button
+    stylingMode="contained"
+    [text]="workingModeText"
+    type="normal"
+    (onClick)="changeWorkingMode()">
+  </dx-button>
+</div>
+
+<div class="content">
+  <dx-dashboard-control 
+    endpoint='https://localhost:5001/dashboard/api'
+    [(dashboardId)]="dashboardId"
+    [workingMode]='workingMode'
+    (onBeforeRender)='onBeforeRender($event)'>
+  </dx-dashboard-control>
+</div>
