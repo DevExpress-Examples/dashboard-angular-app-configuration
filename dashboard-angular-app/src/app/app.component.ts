@@ -12,7 +12,7 @@ export class AppComponent {
   dashboardId: string = 'dashboard1';
   dashboards = [
     {"id": "dashboard1", "name": "Sample Dashboard"},
-    {"id": "dashboard2", "name": "Excel Data Dashboard"},
+    {"id": "dashboard2", "name": "Invoice Dashboard"},
   ];
   get workingModeText() {
     return 'Switch to ' + this.toggleMode(this.workingMode);
