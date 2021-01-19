@@ -9,10 +9,10 @@ import { TextBoxItemEditorExtension } from 'devexpress-dashboard/designer/text-b
 })
 export class AppComponent {
   workingMode: string = 'Viewer';
-  dashboardId: string = 'dashboard1';
+  dashboardId: string = 'support';
   dashboards = [
-    {"id": "dashboard1", "name": "Sample Dashboard"},
-    {"id": "dashboard2", "name": "Invoice Dashboard"},
+    {"id": "support", "name": "Support"},
+    {"id": "products", "name": "Products"},
   ];
   get workingModeText() {
     return 'Switch to ' + this.toggleMode(this.workingMode);

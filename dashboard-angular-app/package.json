@@ -24,6 +24,7 @@
     "devexpress-dashboard-angular": "20.2-next",
     "devextreme": "20.2-next",
     "devextreme-angular": "20.2-next",
+    "devexpress-richedit": "20.2-next",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
