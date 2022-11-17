@@ -57,7 +57,7 @@ namespace AspNetCoreDashboardBackend {
             app.UseCors("CorsPolicy");
             app.UseEndpoints(endpoints => {
                 // Maps the dashboard route.
-                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "api/dashboard", "DefaultDashboard");
+                endpoints.MapDashboardRoute("api/dashboard", "DefaultDashboard");
                 // Requires CORS policies.
                 endpoints.MapControllers().RequireCors("CorsPolicy");
             });
