@@ -15,7 +15,7 @@
         </Node>
       </Schema>
     </JsonDataSource>
-    <JsonDataSource Name="Categories" RootElement="Products" ComponentName="jsonDataSource2">
+    <JsonDataSource Name="Categories" RootElement="Products" ComponentName="jsonDataSource2" ConnectionName="jsonCategories">
       <Source SourceType="DevExpress.DataAccess.Json.UriJsonSource" />
       <Schema>
         <Node Name="root" Type="System.Object" Selected="true" NodeType="Object">
