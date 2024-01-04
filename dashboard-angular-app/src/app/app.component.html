@@ -17,7 +17,8 @@
 
 <div class="content">
   <dx-dashboard-control 
-    endpoint='http://localhost:5000/api/dashboard'
+    style="display: block;width:100%;height:800px;" 
+    endpoint='https://localhost:5001/api/dashboard'
     [(dashboardId)]="dashboardId"
     [workingMode]='workingMode'
     (onBeforeRender)='onBeforeRender($event)'>
