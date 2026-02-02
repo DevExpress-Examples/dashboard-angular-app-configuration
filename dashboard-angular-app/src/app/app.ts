@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { DxDashboardControlModule } from 'devexpress-dashboard-angular';
 import { DevExtremeModule } from 'devextreme-angular';
 import { DashboardControl, DashboardControlArgs } from 'devexpress-dashboard';
 import { TextBoxItemEditorExtension } from 'devexpress-dashboard/designer/text-box-item-editor-extension';
 
-
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, DxDashboardControlModule, DevExtremeModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [
+    DxDashboardControlModule, 
+    DevExtremeModule,
+    
+  ],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
 })
-export class AppComponent {
-  title = 'DashboardAngularApp';
+export class App {
+  title = 'dashboard-angular-app';
   workingMode: string = 'Viewer';
   dashboardId: string = 'support';
   dashboards = [
@@ -35,5 +35,5 @@ export class AppComponent {
     var dashboardControl = args.component;
 
     dashboardControl.registerExtension(new TextBoxItemEditorExtension(dashboardControl));
-  }  
+  }
 }

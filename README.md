@@ -17,17 +17,17 @@ In addition, the [onBeforeRender](https://docs.devexpress.com/Dashboard/js-DevEx
 
 See the following files for implementation details:
 
-- [app.component.html](./dashboard-angular-app/src/app/app.component.html)
-- [app.component.ts](./dashboard-angular-app/src/app/app.component.ts)
+- [app.html](./dashboard-angular-app/src/app/app.html)
+- [app.ts](./dashboard-angular-app/src/app/app.ts)
 
 The example uses a client-server architecture. The server (backend) project communicates with the client (frontend) application that includes all the necessary styles, scripts and HTML templates. Note that the script version on the client must match the version of libraries on the server.
 
-- The [asp-net-core-server](asp-net-core-server) folder contains the backend project built with ASP.NET Core 6.
+- The [asp-net-core-server](asp-net-core-server) folder contains the backend project built with ASP.NET Core.
 - The [dashboard-angular-app](dashboard-angular-app) folder contains the client application built with Angular.
 
 ## Quick Start
 
-In the **asp-net-core-server** folder run the following command:
+In the *asp-net-core-server* folder run the following command:
 
 ```
 dotnet run
@@ -39,7 +39,7 @@ See the following section for information on how to install NuGet packages from 
 
 > This server allows CORS requests from _all_ origins with _any_ scheme (http or https). This default configuration is insecure: any website can make cross-origin requests to the app. We recommend that you specify the client application's URL to prohibit other clients from accessing sensitive information stored on the server. Learn more: [Cross-Origin Resource Sharing (CORS)](https://docs.devexpress.com/Dashboard/400709)
 
-In the **dashboard-angular-app** folder, run the following commands:
+In the *dashboard-angular-app* folder, run the following commands:
 
 ```
 npm install

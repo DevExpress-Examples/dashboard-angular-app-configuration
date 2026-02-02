@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Dashboard>
+<Dashboard RequestParameters="false">
   <Title Text="Support" />
   <DataSources>
-    <JsonDataSource Name="Support" RootElement="Employee" ComponentName="jsonDataSource1" ConnectionName="jsonSupport">
-      <Source SourceType="DevExpress.DataAccess.Json.UriJsonSource" />
+    <JsonDataSource Name="Support" ConnectionName="jsonSupport" RootElement="Employee" ComponentName="jsonDataSource1">
       <Schema>
-        <Node Name="root" Type="System.Object" Selected="true" NodeType="Object">
+        <Node Name="root" Selected="true" NodeType="Object">
           <Node Name="Employee" Selected="true" NodeType="Array">
             <Node Name="Employee" Type="System.String" Selected="true" NodeType="Property" />
             <Node Name="IssueType" Type="System.String" Selected="true" NodeType="Property" />
@@ -15,10 +14,9 @@
         </Node>
       </Schema>
     </JsonDataSource>
-    <JsonDataSource Name="Categories" RootElement="Products" ComponentName="jsonDataSource2" ConnectionName="jsonCategories">
-      <Source SourceType="DevExpress.DataAccess.Json.UriJsonSource" />
+    <JsonDataSource Name="Categories" ConnectionName="jsonCategories" RootElement="Products" ComponentName="jsonDataSource2">
       <Schema>
-        <Node Name="root" Type="System.Object" Selected="true" NodeType="Object">
+        <Node Name="root" Selected="true" NodeType="Object">
           <Node Name="CategoryId" Type="System.Nullable`1[System.Int64]" Selected="true" NodeType="Property" />
           <Node Name="CategoryName" Type="System.String" Selected="true" NodeType="Property" />
           <Node Name="Description" Type="System.String" Selected="true" NodeType="Property" />
@@ -29,7 +27,7 @@
             <Node Name="ProductName" Type="System.String" Selected="true" NodeType="Property" />
             <Node Name="QuantityPerUnit" Type="System.String" Selected="true" NodeType="Property" />
             <Node Name="ReorderLevel" Type="System.Nullable`1[System.Int64]" Selected="true" NodeType="Property" />
-            <Node Name="Supplier" Type="System.Object" Selected="true" NodeType="Property" />
+            <Node Name="Supplier" Selected="true" NodeType="Property" />
             <Node Name="SupplierId" Type="System.Nullable`1[System.Int64]" Selected="true" NodeType="Property" />
             <Node Name="UnitPrice" Type="System.Nullable`1[System.Double]" Selected="true" NodeType="Property" />
             <Node Name="UnitsInStock" Type="System.Nullable`1[System.Int64]" Selected="true" NodeType="Property" />
